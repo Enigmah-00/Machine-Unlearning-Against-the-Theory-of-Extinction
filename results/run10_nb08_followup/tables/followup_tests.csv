@@ -1,0 +1,46 @@
+family,hypothesis,method,n,mean,ci_low,ci_high,p_raw,note,p_holm,significant
+xl-main,XH1 spontaneous recovery (example level),FT,0,,,,,,,False
+xl-main,XH1 spontaneous recovery (example level),NegGrad+,0,,,,,,,False
+xl-main,XH1 spontaneous recovery (example level),RL,0,,,,,,,False
+xl-main,XH1 spontaneous recovery (example level),SCRUB,0,,,,,,,False
+xl-main,XH1 spontaneous recovery (example level),SalUn,0,,,,,,,False
+xl-robustness,R: XH1 with original BN statistics,FT,0,,,,,,,False
+xl-robustness,R: XH1 with original BN statistics,NegGrad+,0,,,,,,,False
+xl-robustness,R: XH1 with original BN statistics,RL,0,,,,,,,False
+xl-robustness,R: XH1 with original BN statistics,SCRUB,0,,,,,,,False
+xl-robustness,R: XH1 with original BN statistics,SalUn,0,,,,,,,False
+xl-main,XH2 renewal (example level),FT,0,,,,,,,False
+xl-main,XH2 renewal (example level),NegGrad+,0,,,,,,,False
+xl-main,XH2 renewal (example level),RL,0,,,,,,,False
+xl-main,XH2 renewal (example level),SCRUB,0,,,,,,,False
+xl-main,XH2 renewal (example level),SalUn,0,,,,,,,False
+xl-main,XH4 savings (example level),FT,0,,,,,,,False
+xl-main,XH4 savings (example level),NegGrad+,0,,,,,,,False
+xl-main,XH4 savings (example level),RL,0,,,,,,,False
+xl-main,XH4 savings (example level),SCRUB,0,,,,,,,False
+xl-main,XH4 savings (example level),SalUn,0,,,,,,,False
+xl-main,XH5 leakage (example level),FT,0,,,,,,,False
+xl-main,XH5 leakage (example level),NegGrad+,0,,,,,,,False
+xl-main,XH5 leakage (example level),RL,0,,,,,,,False
+xl-main,XH5 leakage (example level),SCRUB,0,,,,,,,False
+xl-main,XH5 leakage (example level),SalUn,0,,,,,,,False
+boundary,"B1 relapse fraction, example minus class",FT,21,,,,,"example nan (n=0), class -0.069 (n=21)",,False
+boundary,"B1 relapse fraction, example minus class",NegGrad+,30,,,,,"example nan (n=0), class 0.000 (n=30)",,False
+boundary,"B1 relapse fraction, example minus class",RL,30,,,,,"example nan (n=0), class -0.000 (n=30)",,False
+boundary,"B1 relapse fraction, example minus class",SCRUB,30,,,,,"example nan (n=0), class 0.000 (n=30)",,False
+boundary,"B1 relapse fraction, example minus class",SalUn,30,,,,,"example nan (n=0), class 0.002 (n=30)",,False
+exploratory,E1a forget accuracy after restoring the original bias,FT,21,0.0009523809310935793,0.0,0.002380952327733948,0.07864960352514251,,0.23594881057542755,False
+exploratory,E1a forget accuracy after restoring the original bias,NegGrad+,30,0.0,0.0,0.0,,,,False
+exploratory,E1a forget accuracy after restoring the original bias,RL,30,0.0,0.0,0.0,,,,False
+exploratory,E1a forget accuracy after restoring the original bias,SCRUB,30,0.0,0.0,0.0,,,,False
+exploratory,E1a forget accuracy after restoring the original bias,SalUn,30,0.0,0.0,0.0,,,,False
+exploratory,E1b recall after one constant shift (1% FPR),FT,21,0.5876190321786063,0.5385714144933791,0.6299999810577858,2.9708414867082664e-05,,0.00017825048920249597,True
+exploratory,E1b recall after one constant shift (1% FPR),NegGrad+,30,-0.3713333255300919,-0.4166666576095546,-0.3283333288319409,0.9999991349814353,,1.0,False
+exploratory,E1b recall after one constant shift (1% FPR),RL,30,0.5863333135843277,0.5419999822974205,0.6273333087687691,8.644742180097877e-07,,9.509216398107665e-06,True
+exploratory,E1b recall after one constant shift (1% FPR),SCRUB,30,0.2899999886751175,0.20133332803845405,0.3716666554535429,3.0212573118590774e-05,,0.00017825048920249597,True
+exploratory,E1b recall after one constant shift (1% FPR),SalUn,30,0.5809999873240789,0.5366583169375857,0.621999982992808,8.655631974598644e-07,,9.509216398107665e-06,True
+exploratory,E2 steps to 50% (retrained minus unlearned),FT,21,60.7936507936508,53.33134920634921,67.38095238095238,2.2606885438602453e-05,,0.00015824819807021718,True
+exploratory,E2 steps to 50% (retrained minus unlearned),NegGrad+,30,-54.22222222222221,-66.66666666666666,-40.66666666666666,0.9999975802579814,,1.0,False
+exploratory,E2 steps to 50% (retrained minus unlearned),RL,30,18.777777777777775,9.666666666666666,28.111111111111107,0.001402350670858287,,0.005609402683433148,True
+exploratory,E2 steps to 50% (retrained minus unlearned),SCRUB,30,40.44444444444444,30.888888888888893,49.77777777777778,3.466207694488643e-06,,3.1195869250397785e-05,True
+exploratory,E2 steps to 50% (retrained minus unlearned),SalUn,30,18.83333333333333,10.88888888888889,27.166666666666668,8.122825021825462e-06,,6.49826001746037e-05,True

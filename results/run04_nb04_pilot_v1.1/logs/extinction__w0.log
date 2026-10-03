@@ -1,0 +1,7 @@
+[16:38:31][w0] device cuda:0 Tesla T4
+[16:38:33][w0] job 1/4: ext|original|original|lamp|s0
+[16:38:42][w0] [CIFAR-100-C] using /kaggle/input/datasets/rojanregmi1/cifar100-c/CIFAR-100-C
+[16:38:58][w0] job 2/4: ext|unl|FT|lamp|s0
+[16:44:38][w0] job 3/4: ext|unl|RL|lamp|s0
+[16:49:51][w0] job 4/4: ext|unl|SalUn|lamp|s0
+[16:55:03][w0] finished: 4 ok, 0 failed

@@ -1,0 +1,34 @@
+{
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "forget_classes": [
+    "maple_tree",
+    "tiger",
+    "rose",
+    "shark",
+    "bus",
+    "apple",
+    "chair",
+    "butterfly",
+    "girl",
+    "castle"
+  ],
+  "pilot_class": "lamp",
+  "norm": "bn",
+  "width": 64,
+  "epochs": 40,
+  "batch_size": 256,
+  "lr": 0.1,
+  "momentum": 0.9,
+  "weight_decay": 0.0005,
+  "nesterov": true,
+  "label_smoothing": 0.0,
+  "pct_start": 0.25,
+  "smoke": false,
+  "smoke_train_per_class": 30,
+  "smoke_test_per_class": 10,
+  "ckpt_fp16": true
+}
