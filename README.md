@@ -23,21 +23,21 @@ the tests on forgetting atypical training examples.
 All experiments ran on free Kaggle notebooks with two T4 GPUs (about 30 hours of two-GPU sessions in total).
 
 1. Upload `code/ext_utils.py` as a private Kaggle dataset (we called it `ext-code`).
-2. Run the notebooks in order. Each notebook saves its output, which later notebooks attach as input:
+2. Run the notebooks in order. Each notebook saves its output, which later notebooks attach as input (section, figure and table numbers refer to the current version of the paper):
 
 | Notebook | Purpose | Paper |
 |---|---|---|
 | `00_setup_and_selftest` | Environment check and library self-test | – |
-| `01_train_originals` | Train three ResNet-18 models on CIFAR-100 | Sec. 4 |
-| `02_retrain_references` | Retrain without each forget class (gold standard) | Sec. 3.1, 4 |
-| `03_unlearning` | Calibrate and run the five methods (standard, ABA, multi-context) | Sec. 4 |
-| `04_extinction_tests` | Spontaneous recovery, renewal, reinstatement, rapid reacquisition | Sec. 5 |
-| `05_mechanism` | Linear probes, head swap, weight change, CKA | Sec. 5.1, 5.4 |
-| `06_analysis` | Class-level hypothesis tests (Holm-corrected) | Sec. 5, Table 2 |
-| `07_example_level_and_bias` | Head-bias check; first example-level design (random forget sets) | App. C |
-| `08_followup_analysis` | Example-level tests, class vs example comparison, head bias, relearning speed | Sec. 5.3, 5.4, 6 |
-| `09_example_level_atypical` | Example-level arm with atypical (low C-score) forget sets | Sec. 6 |
-| `10_matched_search` | Longer schedules to obtain matched example-level models | Sec. 6 |
+| `01_train_originals` | Train three ResNet-18 models on CIFAR-100 | Sec. 2.7.1 |
+| `02_retrain_references` | Retrain without each forget class (gold standard) | Sec. 2.2, 2.7.2 |
+| `03_unlearning` | Calibrate and run the five methods (standard, ABA, multi-context) | Sec. 2.7.2, App. B |
+| `04_extinction_tests` | Spontaneous recovery, renewal, reinstatement, rapid reacquisition | Sec. 3.1.2, 3.1.3, Figs. 2–3 |
+| `05_mechanism` | Linear probes, head swap, weight change, CKA | Sec. 3.1.1, 3.1.4, Fig. 4, Table 3 |
+| `06_analysis` | Class-level hypothesis tests (Holm-corrected) | Sec. 3.1, Fig. 1, Table 2 |
+| `07_example_level_and_bias` | Head-bias check; first example-level design (random forget sets) | Sec. 3.1.4, App. C |
+| `08_followup_analysis` | Example-level tests, class vs example comparison, head bias, relearning speed | Sec. 3.1.3, 3.1.4, 3.2, Fig. 5 |
+| `09_example_level_atypical` | Example-level arm with atypical (low C-score) forget sets | Sec. 2.7.3, 3.2 |
+| `10_matched_search` | Longer schedules to obtain matched example-level models | Sec. 3.2.1, Table 4 |
 
 The atypical arm downloads the published CIFAR-100 C-scores (Jiang et al., 2021) from the authors' site; notebook 04
 uses CIFAR-100-C (Hendrycks and Dietterich, 2019). Each notebook lists its inputs and Kaggle settings at the top.
